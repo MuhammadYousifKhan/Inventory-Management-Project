@@ -95,7 +95,7 @@ const Billing = () => {
         <h2 className="text-2xl font-bold text-gray-800">Billing System</h2>
         <button 
           onClick={() => setShowGenerateForm(true)}
-          className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
         >
           + Generate Bill
         </button>
@@ -158,7 +158,7 @@ const Billing = () => {
             </div>
             
             <div className="md:col-span-2 flex space-x-3">
-              <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-lg">
+              <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded-lg">
                 Generate Bill
               </button>
               <button 
@@ -182,7 +182,7 @@ const Billing = () => {
         
         <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
           <div className="text-sm font-medium text-gray-600 mb-2">Total Revenue</div>
-          <div className="text-2xl font-bold text-green-600">
+          <div className="text-2xl font-bold text-blue-600">
             ₹{bills.reduce((sum, bill) => sum + bill.amount, 0).toLocaleString()}
           </div>
         </div>

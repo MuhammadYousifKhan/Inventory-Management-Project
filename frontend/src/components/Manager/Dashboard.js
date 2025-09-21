@@ -12,7 +12,7 @@ const ManagerDashboard = () => {
   const stats = [
     { title: "Today's Orders", value: '12', icon: '🛒', color: 'bg-blue-500', change: '+2' },
     { title: 'Pending Bills', value: '5', icon: '💰', color: 'bg-orange-500', change: '-1' },
-    { title: 'New Customers', value: '3', icon: '👥', color: 'bg-green-500', change: '+3' },
+    { title: 'New Customers', value: '3', icon: '👥', color: 'bg-blue-500', change: '+3' },
     { title: 'Low Stock Items', value: '2', icon: '⚠️', color: 'bg-red-500', change: '+0' }
   ];
 
@@ -49,7 +49,7 @@ const ManagerDashboard = () => {
                     <div className={`w-12 h-12 rounded-full ${stat.color} flex items-center justify-center text-xl`}>
                       {stat.icon}
                     </div>
-                    <span className={`text-sm font-medium ${stat.change.startsWith('+') ? 'text-green-600' : 'text-red-600'}`}>
+                    <span className={`text-sm font-medium ${stat.change.startsWith('+') ? 'text-blue-600' : 'text-red-600'}`}>
                       {stat.change}
                     </span>
                   </div>
@@ -152,10 +152,10 @@ const ManagerDashboard = () => {
     <div className="min-h-screen bg-gray-50 flex">
       {/* Sidebar */}
       {sidebarOpen && (
-        <div className="w-64 bg-green-800 text-white p-4">
+        <div className="w-64 bg-blue-800 text-white p-4">
           <div className="mb-8 flex items-center justify-between">
             <h2 className="text-xl font-bold">Manager Panel</h2>
-            <button onClick={() => setSidebarOpen(false)} className="text-green-200 hover:text-white">
+            <button onClick={() => setSidebarOpen(false)} className="text-blue-200 hover:text-white">
               ✕
             </button>
           </div>
@@ -166,7 +166,7 @@ const ManagerDashboard = () => {
                 <button
                   onClick={() => setActiveTab('dashboard')}
                   className={`w-full text-left px-4 py-3 rounded-lg transition duration-200 flex items-center space-x-3 ${
-                    activeTab === 'dashboard' ? 'bg-green-700' : 'hover:bg-green-700'
+                    activeTab === 'dashboard' ? 'bg-blue-700' : 'hover:bg-blue-700'
                   }`}
                 >
                   <span className="text-lg">📊</span>
@@ -178,7 +178,7 @@ const ManagerDashboard = () => {
                 <button
                   onClick={() => setActiveTab('customers')}
                   className={`w-full text-left px-4 py-3 rounded-lg transition duration-200 flex items-center space-x-3 ${
-                    activeTab === 'customers' ? 'bg-green-700' : 'hover:bg-green-700'
+                    activeTab === 'customers' ? 'bg-blue-700' : 'hover:bg-blue-700'
                   }`}
                 >
                   <span className="text-lg">👥</span>
@@ -190,7 +190,7 @@ const ManagerDashboard = () => {
                 <button
                   onClick={() => setActiveTab('orders')}
                   className={`w-full text-left px-4 py-3 rounded-lg transition duration-200 flex items-center space-x-3 ${
-                    activeTab === 'orders' ? 'bg-green-700' : 'hover:bg-green-700'
+                    activeTab === 'orders' ? 'bg-blue-700' : 'hover:bg-blue-700'
                   }`}
                 >
                   <span className="text-lg">🛒</span>
@@ -202,7 +202,7 @@ const ManagerDashboard = () => {
                 <button
                   onClick={() => setActiveTab('billing')}
                   className={`w-full text-left px-4 py-3 rounded-lg transition duration-200 flex items-center space-x-3 ${
-                    activeTab === 'billing' ? 'bg-green-700' : 'hover:bg-green-700'
+                    activeTab === 'billing' ? 'bg-blue-700' : 'hover:bg-blue-700'
                   }`}
                 >
                   <span className="text-lg">🧾</span>
@@ -214,7 +214,7 @@ const ManagerDashboard = () => {
                 <button
                   onClick={() => setActiveTab('stock')}
                   className={`w-full text-left px-4 py-3 rounded-lg transition duration-200 flex items-center space-x-3 ${
-                    activeTab === 'stock' ? 'bg-green-700' : 'hover:bg-green-700'
+                    activeTab === 'stock' ? 'bg-blue-700' : 'hover:bg-blue-700'
                   }`}
                 >
                   <span className="text-lg">📦</span>
@@ -234,7 +234,7 @@ const ManagerDashboard = () => {
         {!sidebarOpen && (
           <button 
             onClick={() => setSidebarOpen(true)}
-            className="fixed top-20 left-4 bg-green-600 text-white p-2 rounded-lg z-10"
+            className="fixed top-20 left-4 bg-blue-600 text-white p-2 rounded-lg z-10"
           >
             ☰
           </button>
@@ -245,7 +245,7 @@ const ManagerDashboard = () => {
             <div className="mb-6">
               <button 
                 onClick={() => setActiveTab('dashboard')}
-                className="flex items-center text-green-600 hover:text-green-800"
+                className="flex items-center text-blue-600 hover:text-blue-800"
               >
                 ← Back to Dashboard
               </button>

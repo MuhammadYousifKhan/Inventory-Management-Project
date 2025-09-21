@@ -46,7 +46,7 @@ const CustomerManagement = () => {
         <h2 className="text-2xl font-bold text-gray-800">Customer Management</h2>
         <button 
           onClick={() => setShowAddForm(true)}
-          className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
         >
           + Add Customer
         </button>
@@ -153,7 +153,7 @@ const CustomerManagement = () => {
             )}
             
             <div className="md:col-span-2 flex space-x-3">
-              <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-lg">
+              <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded-lg">
                 Add Customer
               </button>
               <button 
@@ -195,7 +195,7 @@ const CustomerManagement = () => {
                     <span className={`px-2 py-1 text-xs rounded-full ${
                       customer.type === 'Battery' 
                         ? 'bg-blue-100 text-blue-800' 
-                        : 'bg-green-100 text-green-800'
+                        : 'bg-blue-100 text-blue-800'
                     }`}>
                       {customer.type}
                     </span>
@@ -208,7 +208,7 @@ const CustomerManagement = () => {
                       <button className="text-blue-600 hover:text-blue-800 text-sm">
                         View
                       </button>
-                      <button className="text-green-600 hover:text-green-800 text-sm">
+                      <button className="text-blue-600 hover:text-blue-800 text-sm">
                         Edit
                       </button>
                     </div>

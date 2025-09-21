@@ -160,7 +160,7 @@ const OrderManagement = () => {
         <h2 className="text-2xl font-bold text-gray-800">Order Management</h2>
         <button 
           onClick={() => setShowOrderForm(true)}
-          className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
         >
           + New Order
         </button>
@@ -307,7 +307,7 @@ const OrderManagement = () => {
             )}
             
             <div className="md:col-span-2 flex space-x-3">
-              <button type="submit" className="bg-green-600 text-white px-4 py-2 rounded-lg">
+              <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded-lg">
                 Create Order
               </button>
               <button 
